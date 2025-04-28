@@ -1,0 +1,88 @@
+.about-container {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F6F6F6;
+  }
+  
+  /* "About Us" heading right before profiles */
+  .about-container h1 {
+    font-size: 2.5rem;
+    margin-right: 35rem;
+    margin-bottom: 30px;
+  }
+  
+  /* Profile layout */
+  .profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    flex-wrap: wrap;
+  }
+  
+  /* Common image style */
+  .profile-image {
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  /* Specific sizes for each */
+  .ashwin-image {
+    width: 150px;
+    height: auto;
+  }
+  
+  .nicole-image {
+    width: 200px;
+    height: 30vh;
+  }
+  
+  .profile-text {
+    max-width: 500px;
+    text-align: left;
+  }
+  
+  .profile-text p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+  
+  .profile-text a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .profile-text a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Bottom links centered */
+  .bottom-links {
+    margin-right: 27rem;
+  }
+  
+  .bottom-links a, 
+  .bottom-links p a {
+    color: #605E5E;
+  }
+  
+  .bottom-links a:hover, 
+  .bottom-links p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive for small screens */
+  @media (max-width: 768px) {
+    .profile-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .profile-text {
+      text-align: center;
+    }
+  }
+  

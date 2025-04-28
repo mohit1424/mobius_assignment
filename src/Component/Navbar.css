@@ -1,0 +1,146 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'poppins';
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 135px;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+  }
+  
+  .logo-mobius img {
+    width: 100px;
+  }
+  
+  .nav-links {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .nav-links ul {
+
+    font-size: 20px;
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links ul li {
+    position: relative;
+  }
+  
+  .nav-links ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    padding: 8px 12px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links ul li a:hover {
+    color: #007bff;
+  }
+  
+  /* Dropdown Menu */
+  .nav-links ul li .dropdown {
+    display: none;
+    position: absolute;
+    background: white;
+    top: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    min-width: 150px;
+    flex-direction: column;
+  }
+  
+  .nav-links ul li .dropdown li {
+    text-align: left;
+  }
+  
+  .nav-links ul li:hover .dropdown {
+    display: flex;
+  }
+  
+  .btn button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Hamburger Icon */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    gap: 5px;
+  }
+  
+  .menu-toggle span {
+    height: 3px;
+    background: #333;
+    border-radius: 2px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .menu-toggle {
+      display: flex;
+    }
+  
+    .nav-links {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      background: white;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out;
+      max-height: 0;
+    }
+  
+    .nav-links ul {
+      flex-direction: column;
+      gap: 15px;
+      padding: 20px 0;
+    }
+  
+    .nav-links ul li {
+      width: 100%;
+    }
+  
+    .show-menu .nav-links {
+      max-height: 500px; /* expand menu when active */
+    }
+  
+    .btn {
+      margin-top: 10px;
+    }
+  }
+
+  
+  

@@ -1,0 +1,119 @@
+.footer-container {
+    background-color: white;
+    padding: 40px 40px; /* Added more side padding */
+  }
+  
+  .footer-top-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    line-height: 2rem;
+  }
+  
+  .footer-info {
+    text-align: left;
+    margin-left: 16rem; /* Gap from left side */
+  }
+  
+  .footer-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-info p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .footer-logo {
+    width: 120px;
+    height: auto;
+    margin-top: 20px; /* Space between text and logo */
+  }
+  
+  .footer-divider {
+    margin: 20px 0;
+    border: 1px solid #ddd;
+  }
+  
+  /* Bottom part */
+  .footer-bottom-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .social-icons a img {
+    margin: 5px;
+    width: 30px;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons a img:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer-text {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .footer-links a {
+    color: #555;
+    font-size: 14px;
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .footer-top-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .footer-bottom-row {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-info {
+      margin-left: 20px; /* smaller margin on mobile */
+    }
+  }
+  
+
+  .whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .whatsapp-icon {
+    width: 60px;
+    height: 60px;
+    animation: vibrate 1s infinite;
+    cursor: pointer;
+  }
+  
+  /* Vibrate animation */
+  @keyframes vibrate {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+  }
+  

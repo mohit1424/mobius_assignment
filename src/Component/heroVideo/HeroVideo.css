@@ -1,0 +1,58 @@
+.hero-video-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F6F6F6;
+  }
+  
+  .hero-video-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-video-container p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #605E5E;
+  }
+  
+  .note {    
+    color: #605E5E;
+  }
+  
+  /* Grid for videos */
+  .videos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  /* Each Video Frame */
+  .video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+    height: 0;
+  }
+  
+  .video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .hero-video-container h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-video-container p {
+      font-size: 1rem;
+    }
+  }
+  
